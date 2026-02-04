@@ -109,14 +109,30 @@ a:hover{ text-decoration: underline; }
 }
 
 .hero{
-  padding: 46px 0 26px;
+  padding: 54px 0 28px;
+  position: relative;
+  overflow: hidden;
 }
+
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(180deg, rgba(11,15,20,.55), rgba(11,15,20,.90)),
+    url("../img/BehaviorCoreBackground.png");
+  background-size: cover;
+  background-position: center;
+  filter: saturate(1.05);
+  transform: scale(1.02);
+  z-index: 0;
+}
+
 .hero-inner{
-  display:grid;
-  grid-template-columns: 1.4fr .9fr;
-  gap: 22px;
-  align-items: start;
+  position: relative;
+  z-index: 1;
 }
+
 .hero-copy h1{
   margin:0 0 10px;
   font-size: clamp(28px, 3.2vw, 44px);
@@ -137,9 +153,9 @@ a:hover{ text-decoration: underline; }
 
 .section{ padding: 28px 0; }
 .section.subtle{
-  background: linear-gradient(180deg, transparent, rgba(255,255,255,.02), transparent);
-  border-top: 1px solid rgba(255,255,255,.06);
-  border-bottom: 1px solid rgba(255,255,255,.06);
+  background: transparent;
+  border-top: none;
+  border-bottom: none;
 }
 .page .section{ padding-top: 36px; }
 
@@ -272,8 +288,9 @@ a:hover{ text-decoration: underline; }
   gap: 12px;
   padding: 16px;
   border-radius: var(--radius2);
-  border: 1px solid rgba(74,163,255,.25);
-  background: linear-gradient(135deg, rgba(74,163,255,.14), rgba(255,255,255,.02));
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.03);
+  box-shadow: var(--shadow);
 }
 .banner-actions{ display:flex; gap: 10px; flex-wrap: wrap; }
 .mt-24{ margin-top: 24px; }
@@ -353,4 +370,14 @@ a:hover{ text-decoration: underline; }
   }
   .site-nav.is-open{ display:flex; }
   .steps{ grid-template-columns: 1fr; }
+}
+
+.brand-logo{
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  object-fit: cover;
+  background: rgba(255,255,255,.02);
 }
