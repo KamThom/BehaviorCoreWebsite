@@ -126,19 +126,6 @@ a:hover{ text-decoration: underline; }
   overflow: hidden;
 }
 
-.hero::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:
-    linear-gradient(180deg, rgba(11,15,20,.55), rgba(11,15,20,.90)),
-    url("../img/BehaviorCoreBackground.png");
-  background-size: cover;
-  background-position: center;
-  filter: saturate(1.05);
-  transform: scale(1.02);
-  z-index: 0;
-}
 
 .hero-inner{
   position: relative;
@@ -316,6 +303,24 @@ a:hover{ text-decoration: underline; }
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
   font-size: 13px;
 }
+
+.banner-image{
+  border-radius: var(--radius2);
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,.02);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  height: 340px;
+}
+
+.banner-image img{
+  width: 100%;
+  height: 100%;
+  display:block;
+  object-fit: cover;
+  object-position: center;
+}
+
 
 .faq-item{
   border: 1px solid var(--border);
