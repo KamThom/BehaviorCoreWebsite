@@ -3,27 +3,34 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+
   <link rel="icon" href="assets/favicon/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" href="assets/favicon/favicon-32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="assets/favicon/favicon-16.png" sizes="16x16">
   <link rel="apple-touch-icon" href="assets/favicon/icon-180.png">
+
   <title>Services | UNC Mouse Behavior Core</title>
   <meta name="description" content="Behavioral domains offered by the UNC Mouse Behavior Core. Full service with optional limited self-service for trained UNC users." />
-  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/services.css" />
 </head>
+
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
-        <img class="brand-logo" src="assets/img/behaviorcorelogo.png" alt="UNC Mouse Behavior Core logo" />
+        <img class="brand-logo" src="assets/img/BehaviorCoreLogo_Favicon.png" alt="UNC Mouse Behavior Core logo" />
         <div class="brand-text">
           <div class="brand-title">Mouse Behavior Core</div>
           <div class="brand-subtitle">UNC Chapel Hill</div>
         </div>
       </div>
+
       <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+
       <nav id="site-nav" class="site-nav" aria-label="Primary">
         <a class="nav-link" href="index.html">Home</a>
         <a class="nav-link is-active" href="services.html">Services</a>
@@ -35,14 +42,20 @@
     </div>
   </header>
 
-  <main id="main" class="page">
+  <main id="main" class="page services-page">
     <section class="section">
       <div class="container">
-        <h1>Services</h1>
-        <p class="lead">
-          The core operates as full-service by default. Limited self-service access may be available for trained UNC investigators
-          under defined conditions and staff oversight.
-        </p>
+
+        <!-- HERO BELONGS HERE (NOT IN HEADER) -->
+        <div class="services-hero">
+          <div class="services-hero-copy">
+            <h1>Services</h1>
+            <p class="lead">
+              The core operates as full-service by default. Limited self-service access may be available for trained UNC investigators
+              under defined conditions and staff oversight.
+            </p>
+          </div>
+        </div>
 
         <div class="grid-2">
           <div class="card">
@@ -69,52 +82,61 @@
           </div>
         </div>
 
-        <h2>Domains currently supported (skeleton)</h2>
-        <p class="muted">
-          Assay-specific pages will be added over time. For now, use iLab to request a consult and specify your domain(s).
-        </p>
+        <div class="services-domains">
+          <h2>Domains currently supported</h2>
+          <p class="muted">
+            Assay-specific pages will be added over time. For now, use iLab to request a consult and specify your domain(s).
+          </p>
 
-        <div class="tiles">
-          <article class="tile">
-            <h3>Water maze</h3>
-            <p>Spatial learning and memory paradigms. Sensitive to strain, vision, and stress handling.</p>
-            <div class="tile-meta">Typical outputs: latency, path length, probe metrics (placeholder)</div>
-          </article>
-          <article class="tile">
-            <h3>Motor</h3>
-            <p>Locomotion, coordination, balance, and motor learning readouts.</p>
-            <div class="tile-meta">Typical outputs: distance, speed, falls, performance curves (placeholder)</div>
-          </article>
-          <article class="tile">
-            <h3>Anxiety / Affect</h3>
-            <p>Approach–avoidance and exploration-based measures. Strongly environment-dependent.</p>
-            <div class="tile-meta">Typical outputs: time-in-zone, entries, ethological metrics (placeholder)</div>
-          </article>
-          <article class="tile">
-            <h3>Learning / Memory</h3>
-            <p>Task-dependent learning curves and retention metrics.</p>
-            <div class="tile-meta">Typical outputs: trials-to-criterion, error rates (placeholder)</div>
-          </article>
-          <article class="tile">
-            <h3>Social</h3>
-            <p>Social preference, novelty, interaction time, and exploration patterns.</p>
-            <div class="tile-meta">Typical outputs: interaction durations, preference indices (placeholder)</div>
-          </article>
-          <article class="tile">
-            <h3>Sensory</h3>
-            <p>Basic sensory processing and gating tasks (capability-dependent).</p>
-            <div class="tile-meta">Typical outputs: response amplitudes, detection metrics (placeholder)</div>
-          </article>
-          <article class="tile">
-            <h3>Circadian</h3>
-            <p>Activity rhythms and light-cycle sensitive paradigms.</p>
-            <div class="tile-meta">Typical outputs: actograms, period, phase metrics (placeholder)</div>
-          </article>
-          <article class="tile">
-            <h3>Sleep</h3>
-            <p>Sleep-related metrics are instrumentation-dependent. Confirm capability during consult.</p>
-            <div class="tile-meta">Typical outputs: bout structure, staging (placeholder)</div>
-          </article>
+          <div class="tiles">
+            <article class="tile">
+              <h3>Water maze</h3>
+              <p>Spatial learning and memory paradigms. Sensitive to strain, vision, and stress handling.</p>
+              <div class="tile-meta">Typical outputs: latency, path length, probe metrics (placeholder)</div>
+            </article>
+
+            <article class="tile">
+              <h3>Motor</h3>
+              <p>Locomotion, coordination, balance, and motor learning readouts.</p>
+              <div class="tile-meta">Typical outputs: distance, speed, falls, performance curves (placeholder)</div>
+            </article>
+
+            <article class="tile">
+              <h3>Anxiety / Affect</h3>
+              <p>Approach–avoidance and exploration-based measures. Strongly environment-dependent.</p>
+              <div class="tile-meta">Typical outputs: time-in-zone, entries, ethological metrics (placeholder)</div>
+            </article>
+
+            <article class="tile">
+              <h3>Learning / Memory</h3>
+              <p>Task-dependent learning curves and retention metrics.</p>
+              <div class="tile-meta">Typical outputs: trials-to-criterion, error rates (placeholder)</div>
+            </article>
+
+            <article class="tile">
+              <h3>Social</h3>
+              <p>Social preference, novelty, interaction time, and exploration patterns.</p>
+              <div class="tile-meta">Typical outputs: interaction durations, preference indices (placeholder)</div>
+            </article>
+
+            <article class="tile">
+              <h3>Sensory</h3>
+              <p>Basic sensory processing and gating tasks (capability-dependent).</p>
+              <div class="tile-meta">Typical outputs: response amplitudes, detection metrics (placeholder)</div>
+            </article>
+
+            <article class="tile">
+              <h3>Circadian</h3>
+              <p>Activity rhythms and light-cycle sensitive paradigms.</p>
+              <div class="tile-meta">Typical outputs: actograms, period, phase metrics (placeholder)</div>
+            </article>
+
+            <article class="tile">
+              <h3>Sleep</h3>
+              <p>Sleep-related metrics are instrumentation-dependent. Confirm capability during consult.</p>
+              <div class="tile-meta">Typical outputs: bout structure, staging (placeholder)</div>
+            </article>
+          </div>
         </div>
 
         <div class="banner mt-24">
@@ -123,8 +145,8 @@
             <p class="muted">Request it. We’ll tell you quickly whether it’s feasible, and what it would take to add.</p>
           </div>
           <div class="banner-actions">
-            <a class="btn btn-primary" href="schedule.html">Schedule in iLab</a>
-            <a class="btn btn-ghost" href="contact.html">Contact</a>
+            <a class="btn" href="schedule.html">Schedule in iLab</a>
+            <a class="btn" href="contact.html">Contact</a>
           </div>
         </div>
 
@@ -134,13 +156,19 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div>
+      <div class="footer-left">
         <div class="footer-title">UNC Mouse Behavior Core</div>
-        <div class="muted">Services list is a placeholder skeleton.</div>
+        <div class="footer-line muted">
+          Primary contact: <span class="footer-strong">Krisha</span> (Core Manager)
+        </div>
       </div>
-      <div class="footer-links">
-        <a href="resources.html">Resources</a>
-        <a href="contact.html">Contact</a>
+
+      <div class="footer-right">
+        <div class="footer-links">
+          <a href="contact.html">Contact</a>
+          <a href="resources.html">Acknowledgement</a>
+        </div>
+        <div class="footer-credit muted">Site built by Kam</div>
       </div>
     </div>
   </footer>
