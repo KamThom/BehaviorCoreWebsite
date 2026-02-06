@@ -1,0 +1,115 @@
+/* =========================
+   Workflow page layout
+   ========================= */
+
+.workflow-page .section{
+  padding-top: 28px;
+  padding-bottom: 64px;
+}
+
+/* =========================
+   Hero band
+   ========================= */
+
+.workflow-page .workflow-hero{
+  margin-top: 6px;
+  margin-bottom: 18px;
+  padding: 16px;
+  border-radius: var(--radius2);
+  border: 1px solid var(--border);
+  background:
+    radial-gradient(900px 280px at 12% 0%, rgba(74,163,255,.12), transparent 58%),
+    radial-gradient(850px 260px at 82% 15%, rgba(139,208,255,.08), transparent 60%),
+    linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-template-columns: 1.25fr .75fr;
+  gap: 14px;
+  align-items: start;
+}
+
+.workflow-page h1{
+  margin: 0 0 8px;
+  letter-spacing: .2px;
+}
+
+.workflow-page .lead{
+  max-width: 80ch;
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.workflow-page .workflow-hero-aside{
+  border: 1px solid var(--border);
+  border-radius: var(--radius2);
+  background: rgba(255,255,255,.02);
+  padding: 14px;
+}
+
+.workflow-page .workflow-hero-kicker{
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+/* =========================
+   Section title
+   ========================= */
+
+.workflow-page .workflow-section-title{
+  margin: 18px 0 10px;
+  letter-spacing: .2px;
+}
+
+/* =========================
+   Steps emphasis
+   ========================= */
+
+.workflow-page .workflow-steps{
+  gap: 14px;
+}
+
+.workflow-page .workflow-steps .step{
+  background:
+    radial-gradient(650px 220px at 12% 0%, rgba(74,163,255,.08), transparent 55%),
+    rgba(255,255,255,.02);
+  border-color: rgba(255,255,255,.12);
+}
+
+.workflow-page .workflow-steps .step-title{
+  letter-spacing: .2px;
+}
+
+/* =========================
+   Non-negotiables callout
+   ========================= */
+
+.workflow-page .workflow-nonneg{
+  border-color: rgba(74,163,255,.20);
+  background:
+    radial-gradient(900px 260px at 18% 0%, rgba(74,163,255,.10), transparent 55%),
+    linear-gradient(180deg, rgba(17,24,38,.88), rgba(15,22,34,.88));
+}
+
+.workflow-page .workflow-nonneg strong{
+  color: var(--text);
+}
+
+/* =========================
+   Timeline block (subtle)
+   ========================= */
+
+.workflow-page .workflow-timeline{
+  background: rgba(255,255,255,.02);
+  box-shadow: 0 10px 26px rgba(0,0,0,.22);
+}
+
+/* =========================
+   Responsive
+   ========================= */
+
+@media (max-width: 900px){
+  .workflow-page .workflow-hero{
+    grid-template-columns: 1fr;
+  }
+}

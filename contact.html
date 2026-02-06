@@ -3,77 +3,212 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Contact | UNC Mouse Behavior Core</title>
+  <meta name="description" content="Contact and staff information for the UNC Mouse Behavior Core." />
+
+  <!-- Favicons -->
   <link rel="icon" href="assets/favicon/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" href="assets/favicon/favicon-32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="assets/favicon/favicon-16.png" sizes="16x16">
   <link rel="apple-touch-icon" href="assets/favicon/icon-180.png">
-  <title>Contact | UNC Mouse Behavior Core</title>
-  <meta name="description" content="Contact and staff information for the UNC Mouse Behavior Core." />
-  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
 </head>
+
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
+  <!-- Header / Nav -->
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
-        <img class="brand-logo" src="assets/img/behaviorcorelogo.png" alt="UNC Mouse Behavior Core logo" />
+        <img class="brand-logo"
+             src="assets/img/BehaviorCoreLogo_Favicon.png"
+             alt="UNC Mouse Behavior Core logo" />
         <div class="brand-text">
           <div class="brand-title">Mouse Behavior Core</div>
           <div class="brand-subtitle">UNC Chapel Hill</div>
         </div>
       </div>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        Menu
+      </button>
+
       <nav id="site-nav" class="site-nav" aria-label="Primary">
         <a class="nav-link" href="index.html">Home</a>
         <a class="nav-link" href="services.html">Services</a>
         <a class="nav-link" href="workflow.html">Workflow</a>
         <a class="nav-link" href="schedule.html">Schedule (iLab)</a>
         <a class="nav-link" href="resources.html">Resources</a>
+        <a class="nav-link" href="publications.html">Publications</a>
         <a class="nav-link is-active" href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main id="main" class="page">
+  <main id="main" class="page contact-page">
+
+    <section class="section page-hero">
+      <div class="container">
+        <div class="hero-slab">
+          <div class="hero-main">
+            <h1>Contact</h1>
+            <p class="lead">
+              Use iLab for requests and scheduling. Use email for quick questions that don’t require booking.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section">
       <div class="container">
-        <h1>Contact</h1>
-        <p class="lead">
-          Use iLab for requests and scheduling. Use email for quick questions that don’t require booking.
-        </p>
 
-        <div class="grid-2">
+        <!-- Row 1: Core email (single column) -->
+        <div class="grid-1">
           <div class="card">
-            <h2 class="h3">Core email</h2>
-            <p class="code-like">behaviorcore@unc.edu</p>
-            <p class="muted">Placeholder address. Replace with your actual shared inbox.</p>
-            <div class="cta-row">
-              <a class="btn btn-primary" href="schedule.html">Schedule in iLab</a>
-              <a class="btn btn-ghost" href="workflow.html">Workflow</a>
+            <div class="card-head">
+              <h2 class="h3">Core email</h2>
             </div>
-          </div>
 
-          <div class="card">
-            <h2 class="h3">Staff (placeholders)</h2>
-            <div class="staff-list">
-              <div class="staff">
-                <div class="staff-name">Core Director</div>
-                <div class="muted">Scientific oversight, escalation point, service development</div>
-              </div>
-              <div class="staff">
-                <div class="staff-name">Core Manager</div>
-                <div class="muted">Scheduling, training, QC processes, intake coordination</div>
-              </div>
-              <div class="staff">
-                <div class="staff-name">Behavior Specialist</div>
-                <div class="muted">Assay execution, run notes, data exports</div>
-              </div>
+            <div id="coreEmail" class="code-like" data-copy-text="behaviorcore@unc.edu">randomemail@email.random.filler</div>
+            <p class="muted">Use this for general questions and routing. Scheduling still happens in iLab.</p>
+
+            <div class="cta-row">
+              <button class="btn" type="button" data-copy="#coreEmail">Copy email</button>
+              <a class="btn btn-ghost" href="mailto:behaviorcore@unc.edu">Email now</a>
             </div>
           </div>
         </div>
 
-        <div class="card mt-24">
+        <!-- Row 2: Staff contacts (full width) -->
+        <div class="grid-1 mt-18">
+          <div class="card">
+            <h2 class="h3">Staff contacts</h2>
+
+            <div class="staff-hint">
+              <div class="hint-row">
+                <span class="pill pill-primary">Default</span>
+                <span>Contact <strong>Krisha</strong> for most questions.</span>
+              </div>
+              <div class="hint-row">
+                <span class="pill">Animals</span>
+                <span>Animal-specific issues: <strong>Viktoriya</strong>.</span>
+              </div>
+              <div class="hint-row">
+                <span class="pill">Escalation</span>
+                <span>Scientific oversight/escalation: <strong>Jose</strong>.</span>
+              </div>
+            </div>
+
+            <div class="staff-list">
+
+              <!-- Core Manager -->
+              <article class="staff staff-featured">
+                <div class="staff-top">
+                  <div>
+                    <div class="staff-name">Krisha Mehta</div>
+                    <div class="staff-role">Core Manager</div>
+                  </div>
+                  <!-- neutral, not blue -->
+                  <span class="badge badge-ghost">Primary contact</span>
+                </div>
+
+                <div class="staff-meta">
+                  <a class="meta-link" href="mailto:krisha_mehta@med.unc.edu">krisha_mehta@med.unc.edu</a>
+                  <span class="meta-sep">•</span>
+                  <a class="meta-link" href="https://www.linkedin.com/in/krisha-mehta-1a581a19a/" target="_blank" rel="noopener">LinkedIn</a>
+                </div>
+
+                <div class="staff-meta muted">Phone: available on request</div>
+
+                <div class="staff-actions">
+                  <button class="mini-btn" type="button" data-copy-text="krisha_mehta@med.unc.edu">Copy email</button>
+                  <a class="mini-btn mini-btn-ghost" href="mailto:krisha_mehta@med.unc.edu">Email</a>
+                </div>
+              </article>
+
+              <!-- Behavior Specialist -->
+              <article class="staff">
+                <div class="staff-top">
+                  <div>
+                    <div class="staff-name">Viktoriya Nikolova</div>
+                    <div class="staff-role">Behavior Specialist</div>
+                  </div>
+                  <span class="badge badge-ghost">Animals</span>
+                </div>
+
+                <div class="staff-meta">
+                  <a class="meta-link" href="mailto:viktoriya_nikolova@med.unc.edu">viktoriya_nikolova@med.unc.edu</a>
+                  <span class="meta-sep">•</span>
+                  <a class="meta-link" href="https://www.linkedin.com/in/viktoriya-nikolova-4859521a5/" target="_blank" rel="noopener">LinkedIn</a>
+                </div>
+
+                <div class="staff-meta muted">Phone: available on request</div>
+
+                <div class="staff-actions">
+                  <button class="mini-btn" type="button" data-copy-text="viktoriya_nikolova@med.unc.edu">Copy email</button>
+                  <a class="mini-btn mini-btn-ghost" href="mailto:viktoriya_nikolova@med.unc.edu">Email</a>
+                </div>
+              </article>
+
+              <!-- Core Director -->
+              <article class="staff">
+                <div class="staff-top">
+                  <div>
+                    <div class="staff-name">Jose Rodriguez-Romaguera</div>
+                    <div class="staff-role">Core Director</div>
+                  </div>
+                  <span class="badge badge-ghost">Escalation</span>
+                </div>
+
+                <div class="staff-meta">
+                  <a class="meta-link" href="mailto:joserodroma@gmail.com">joserodroma@gmail.com</a>
+                  <span class="meta-sep">•</span>
+                  <a class="meta-link" href="https://www.linkedin.com/in/joserodroma/" target="_blank" rel="noopener">LinkedIn</a>
+                </div>
+
+                <div class="staff-meta muted">Phone: available on request</div>
+
+                <div class="staff-actions">
+                  <button class="mini-btn" type="button" data-copy-text="joserodroma@gmail.com">Copy email</button>
+                  <a class="mini-btn mini-btn-ghost" href="mailto:joserodroma@gmail.com">Email</a>
+                </div>
+              </article>
+
+              <article class="staff">
+                <div class="staff-top">
+                  <div>
+                    <div class="staff-name">Kam Thomas</div>
+                    <div class="staff-role">Engineer (Web / Systems)</div>
+                  </div>
+                  <span class="badge badge-ghost">Engineer</span>
+                </div>
+
+                <div class="staff-meta">
+                  <a class="meta-link" href="mailto:kamthoma@email.unc.edu">kamthoma@email.unc.edu</a>
+                  <span class="meta-sep">•</span>
+                  <a class="meta-link" href="https://www.linkedin.com/in/kamthoma" target="_blank" rel="noopener">LinkedIn</a>
+                </div>
+
+                <div class="staff-meta muted">Phone: (919) 555-0123</div>
+
+                <div class="staff-actions">
+                  <button class="mini-btn" type="button" data-copy-text="kamthoma@email.unc.edu">Copy email</button>
+                  <a class="mini-btn mini-btn-ghost" href="mailto:kamthoma@email.unc.edu">Email</a>
+                </div>
+              </article>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Optional guidance card -->
+        <section class="card mt-24">
           <h2 class="h3">What to include in an email</h2>
           <ul class="clean-list">
             <li>Domain(s) of interest and your primary endpoint</li>
@@ -81,25 +216,80 @@
             <li>Intervention timeline (if any)</li>
             <li>Ideal date range and hard constraints</li>
           </ul>
-        </div>
+        </section>
 
       </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div>
+      <div class="footer-left">
         <div class="footer-title">UNC Mouse Behavior Core</div>
-        <div class="muted">Replace placeholders before launch.</div>
+        <div class="footer-line muted">
+          Primary contact: <span class="footer-strong">Krisha</span> (Core Manager)
+        </div>
       </div>
-      <div class="footer-links">
-        <a href="resources.html">Resources</a>
-        <a href="schedule.html">Schedule</a>
+
+      <div class="footer-right">
+        <div class="footer-links">
+          <a href="contact.html">Contact</a>
+          <a href="resources.html">Acknowledgement</a>
+        </div>
+        <div class="footer-credit muted">Site built by Kam</div>
       </div>
     </div>
   </footer>
 
   <script src="assets/js/main.js"></script>
+
+  <!-- Copy-to-clipboard + toast -->
+  <script>
+    (function () {
+      function toast(msg) {
+        let t = document.querySelector('.toast');
+        if (!t) {
+          t = document.createElement('div');
+          t.className = 'toast';
+          document.body.appendChild(t);
+        }
+        t.textContent = msg;
+        t.classList.add('show');
+        clearTimeout(window.__toastTimer);
+        window.__toastTimer = setTimeout(() => t.classList.remove('show'), 1400);
+      }
+
+      async function copyText(text) {
+        try {
+          await navigator.clipboard.writeText(text);
+          toast('Copied');
+        } catch (e) {
+          const ta = document.createElement('textarea');
+          ta.value = text;
+          ta.style.position = 'fixed';
+          ta.style.left = '-9999px';
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand('copy');
+          document.body.removeChild(ta);
+          toast('Copied');
+        }
+      }
+
+      document.addEventListener('click', (ev) => {
+        const btn = ev.target.closest('[data-copy],[data-copy-text]');
+        if (!btn) return;
+
+        const direct = btn.getAttribute('data-copy-text');
+        if (direct) return copyText(direct);
+
+        const sel = btn.getAttribute('data-copy');
+        const el = sel ? document.querySelector(sel) : null;
+        const text = el ? (el.getAttribute('data-copy-text') || el.textContent || '').trim() : '';
+        if (text) copyText(text);
+      });
+    })();
+  </script>
 </body>
 </html>

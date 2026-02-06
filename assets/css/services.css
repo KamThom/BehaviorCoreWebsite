@@ -1,133 +1,162 @@
-/* =========================
-   Services page layout
-   ========================= */
+/* ==========================================
+   Services page (services.html)
+   Depends on base.css
+========================================== */
 
-.services-page .section{
-  padding-top: 28px;
-  padding-bottom: 64px;
+/* --------------------------
+   Page spacing
+--------------------------- */
+.page{
+  padding: 24px 0 6px;
 }
 
-/* =========================
-   Hero band
-   ========================= */
+.page-hero{
+  padding: 34px 0 0;
+}
 
-.services-page .services-hero{
-  margin-top: 6px;
-  margin-bottom: 18px;
-  padding: 16px;
+.section{
+  padding: 18px 0 46px;
+}
+
+/* --------------------------
+   Hero slab
+--------------------------- */
+.hero-slab{
+  padding: 22px;
   border-radius: var(--radius2);
-  border: 1px solid var(--border);
+  border: 1px solid rgba(255,255,255,.12);
   background:
-    radial-gradient(900px 280px at 12% 0%, rgba(74,163,255,.14), transparent 58%),
-    radial-gradient(850px 260px at 82% 15%, rgba(139,208,255,.10), transparent 60%),
-    linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+    radial-gradient(900px 260px at 12% 18%, rgba(74,163,255,.16), transparent 60%),
+    linear-gradient(180deg, rgba(17,24,38,.94), rgba(15,22,34,.94));
   box-shadow: var(--shadow);
+
   display: grid;
-  grid-template-columns: 1.25fr .75fr;
-  gap: 14px;
+  grid-template-columns: 1.15fr .85fr;
+  gap: 18px;
   align-items: start;
 }
 
-.services-page h1{
-  margin: 0 0 8px;
-  letter-spacing: .2px;
+.hero-main h1{
+  margin: 0 0 10px;
+  font-size: clamp(26px, 3vw, 40px);
+  line-height: 1.12;
 }
 
-.services-page .lead{
-  max-width: 75ch;
-  margin: 0;
-  color: var(--muted);
-  line-height: 1.6;
+.hero-main .lead{
+  margin: 0 0 16px;
+  max-width: 70ch;
 }
 
-.services-page .services-hero-badges{
+.cta-row{
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: flex-end;
-  align-content: start;
 }
 
-.services-page .badge{
-  padding: 8px 10px;
-  border-radius: 999px;
-  border: 1px solid var(--border);
+.note{
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 14px;
+  border: 1px dashed rgba(255,255,255,.18);
   background: rgba(255,255,255,.03);
-  color: var(--text);
+  color: var(--muted);
   font-size: 13px;
-  opacity: .92;
 }
 
-@media (max-width: 900px){
-  .services-page .services-hero{
-    grid-template-columns: 1fr;
-  }
-  .services-page .services-hero-badges{
-    justify-content: flex-start;
-  }
+.hero-side{
+  padding-left: 18px;
+  border-left: 1px solid rgba(255,255,255,.10);
 }
 
-/* =========================
+.hero-side .h3{
+  margin-bottom: 8px;
+}
+
+.mini-actions{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.pill{
+  display:inline-flex;
+  align-items:center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(0,0,0,.12);
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.pill-primary{
+  border-color: rgba(74,163,255,.45);
+  background: rgba(74,163,255,.10);
+}
+
+/* --------------------------
    Intro cards
-   ========================= */
-
-.services-page .grid-2{
+--------------------------- */
+.grid-2{
   margin-top: 14px;
   gap: 14px;
 }
 
-.services-page .card{
-  border: 1px solid var(--border);
+.card{
+  border: 1px solid rgba(255,255,255,.10);
   border-radius: var(--radius2);
   background:
-    radial-gradient(900px 260px at 10% 0%, rgba(255,255,255,.03), transparent 55%),
+    radial-gradient(900px 260px at 12% 0%, rgba(74,163,255,.08), transparent 60%),
     linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
   box-shadow: 0 10px 26px rgba(0,0,0,.28);
   padding: 16px 16px 14px;
 }
 
-.services-page .card .h3{
+.card .h3{
   margin: 0 0 10px;
   font-size: 16px;
   letter-spacing: .2px;
 }
 
-.services-page .clean-list{
+.clean-list{
   margin: 0;
   padding-left: 18px;
   color: var(--muted);
 }
 
-.services-page .clean-list li{
+.clean-list li{
   margin: 6px 0;
   line-height: 1.45;
 }
 
-.services-page .card .muted{
+.card .muted{
   margin-top: 10px;
   font-size: 13px;
 }
 
-/* =========================
+/* --------------------------
    Domains section
-   ========================= */
-
-.services-page .services-domains{
+--------------------------- */
+.services-domains{
   margin-top: 22px;
 }
 
-.services-page .services-domains h2{
+.services-domains h2{
   margin: 0 0 6px;
   letter-spacing: .2px;
 }
 
-.services-page .services-domains .muted{
+.services-domains .muted{
   margin: 0;
   line-height: 1.55;
 }
 
-/* Tiles grid */
-.services-page .tiles{
+/* --------------------------
+   Tiles
+--------------------------- */
+.tiles{
   margin-top: 14px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -135,93 +164,270 @@
   align-items: stretch;
 }
 
-.services-page .tile{
+.tile{
   grid-column: span 6;
-  border: 1px solid var(--border);
+  border: 1px solid rgba(255,255,255,.10);
   border-radius: var(--radius2);
   padding: 14px 14px 12px;
-  background: rgba(255,255,255,.02);
+  background:
+    radial-gradient(700px 260px at 10% 0%, rgba(74,163,255,.06), transparent 62%),
+    rgba(255,255,255,.02);
   box-shadow: 0 10px 26px rgba(0,0,0,.22);
   transition: transform .12s ease, border-color .12s ease, background .12s ease;
   position: relative;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  min-height: 170px;
+  min-height: 220px; /* room for media */
 }
 
-.services-page .tile:hover{
+.tile:hover{
   transform: translateY(-1px);
-  border-color: rgba(255,255,255,.16);
+  border-color: rgba(74,163,255,.35);
   background:
-    radial-gradient(650px 220px at 12% 0%, rgba(74,163,255,.10), transparent 55%),
+    radial-gradient(650px 220px at 12% 0%, rgba(74,163,255,.14), transparent 58%),
     rgba(255,255,255,.02);
 }
 
-.services-page .tile h3{
+/* Placeholder media */
+.tile-media{
+  height: 118px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.10);
+  background:
+    radial-gradient(360px 160px at 18% 22%, rgba(74,163,255,.22), transparent 60%),
+    radial-gradient(360px 160px at 82% 18%, rgba(139,208,255,.12), transparent 62%),
+    linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.015));
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.20);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.tile-media img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: inherit;
+  /* optional: keeps photos in your palette without changing the page look */
+  filter: saturate(.95) contrast(1.02);
+}
+
+.tile:hover .tile-media img{
+  transform: scale(1.03);
+  transition: transform .18s ease;
+}
+
+@media (prefers-reduced-motion: reduce){
+  .tile:hover .tile-media img{ transform: none; transition: none; }
+}
+
+/* Per-assay subtle variation (still blue family) */
+.tile-media--watermaze{ background:
+  radial-gradient(380px 170px at 18% 18%, rgba(74,163,255,.26), transparent 62%),
+  radial-gradient(360px 160px at 78% 26%, rgba(139,208,255,.10), transparent 60%),
+  linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.015));
+}
+.tile-media--motor{ background:
+  radial-gradient(380px 170px at 18% 22%, rgba(74,163,255,.20), transparent 62%),
+  radial-gradient(360px 160px at 82% 18%, rgba(74,163,255,.12), transparent 60%),
+  linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.015));
+}
+.tile-media--anxiety{ background:
+  radial-gradient(380px 170px at 18% 18%, rgba(74,163,255,.18), transparent 62%),
+  radial-gradient(360px 160px at 78% 24%, rgba(139,208,255,.14), transparent 60%),
+  linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.015));
+}
+.tile-media--memory{ background:
+  radial-gradient(380px 170px at 18% 22%, rgba(74,163,255,.24), transparent 62%),
+  radial-gradient(360px 160px at 80% 20%, rgba(139,208,255,.10), transparent 60%),
+  linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.015));
+}
+.tile-media--social{ background:
+  radial-gradient(380px 170px at 18% 18%, rgba(74,163,255,.20), transparent 62%),
+  radial-gradient(360px 160px at 80% 26%, rgba(139,208,255,.12), transparent 60%),
+  linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.015));
+}
+.tile-media--sensory{ background:
+  radial-gradient(380px 170px at 18% 20%, rgba(74,163,255,.22), transparent 62%),
+  radial-gradient(360px 160px at 80% 18%, rgba(74,163,255,.10), transparent 60%),
+  linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.015));
+}
+.tile-media--circadian{ background:
+  radial-gradient(380px 170px at 18% 18%, rgba(74,163,255,.18), transparent 62%),
+  radial-gradient(360px 160px at 80% 22%, rgba(139,208,255,.12), transparent 60%),
+  linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.015));
+}
+.tile-media--sleep{ background:
+  radial-gradient(380px 170px at 18% 20%, rgba(74,163,255,.16), transparent 62%),
+  radial-gradient(360px 160px at 80% 18%, rgba(139,208,255,.14), transparent 60%),
+  linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.015));
+}
+
+/* Label overlay (optional, helps as filler) */
+.tile-media-label{
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(0,0,0,.22);
+  color: rgba(230,237,246,.95);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .2px;
+}
+
+/* The title + circle marker */
+.tile h3{
   margin: 0 0 8px;
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.services-page .tile h3::before{
+.tile h3::before{
   content:"";
   width: 10px;
   height: 10px;
   border-radius: 999px;
-  border: 1px solid rgba(255,255,255,.18);
-  background: rgba(74,163,255,.18);
-  box-shadow: 0 0 0 2px rgba(74,163,255,.10);
+  border: 1px solid rgba(74,163,255,.55);
+  background: rgba(74,163,255,.22);
+  box-shadow: 0 0 0 2px rgba(74,163,255,.12);
 }
 
-.services-page .tile p{
+.tile p{
   margin: 0 0 10px;
   color: var(--muted);
   line-height: 1.55;
   font-size: 14px;
 }
 
-.services-page .tile-meta{
+.tile-meta{
   margin-top: auto;
-  border-top: 1px solid var(--border);
+  border-top: 1px solid rgba(255,255,255,.10);
   padding-top: 10px;
-  color: rgba(167,179,195,.9);
+  color: rgba(167,179,195,.92);
   font-size: 12.5px;
   line-height: 1.45;
 }
 
-/* Subtle edge glow */
-.services-page .tile::after{
+/* Edge glow */
+.tile::after{
   content: "";
   position: absolute;
   inset: -1px;
   border-radius: inherit;
   pointer-events: none;
-  background: linear-gradient(90deg, rgba(74,163,255,.14), transparent 45%, rgba(139,208,255,.08));
-  opacity: .14;
+  background: linear-gradient(
+    90deg,
+    rgba(74,163,255,.18),
+    transparent 46%,
+    rgba(74,163,255,.10)
+  );
+  opacity: .16;
   mask: linear-gradient(#000, #000) content-box, linear-gradient(#000, #000);
   -webkit-mask: linear-gradient(#000, #000) content-box, linear-gradient(#000, #000);
   padding: 1px;
   border: 1px solid transparent;
 }
 
-@media (max-width: 720px){
-  .services-page .tile{
-    grid-column: span 12;
-  }
+/* --------------------------
+   Rates section
+--------------------------- */
+.rates h2{
+  margin: 0 0 6px;
+  letter-spacing: .2px;
 }
 
-/* =========================
-   CTA banner
-   ========================= */
+.rates .muted{
+  margin: 0;
+  line-height: 1.55;
+}
 
-.services-page .banner{
+.rate-grid{
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 12px;
+  align-items: stretch;
+}
+
+.rate-card{
+  grid-column: span 4;
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: var(--radius2);
+  background:
+    radial-gradient(900px 260px at 12% 0%, rgba(74,163,255,.08), transparent 60%),
+    linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+  box-shadow: 0 10px 26px rgba(0,0,0,.22);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 220px;
+}
+
+.rate-top{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.rate-card .h3{
+  margin: 0;
+  font-size: 16px;
+  letter-spacing: .2px;
+}
+
+.rate-price{
+  font-weight: 900;
+  color: rgba(230,237,246,.95);
+  font-size: 15px;
+  border: 1px solid rgba(74,163,255,.28);
+  background: rgba(74,163,255,.08);
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+
+.rate-foot{
+  margin-top: auto;
+  border-top: 1px solid rgba(255,255,255,.10);
+  padding-top: 10px;
+  font-size: 13px;
+}
+
+.rate-note{
+  margin-top: 12px;
+  padding: 14px;
+  border-radius: var(--radius2);
+  border: 1px solid rgba(74,163,255,.22);
+  background:
+    radial-gradient(900px 240px at 18% 0%, rgba(74,163,255,.12), transparent 60%),
+    rgba(255,255,255,.02);
+}
+
+.rate-note .h3{
+  margin: 0 0 6px;
+  font-size: 15px;
+}
+
+.rate-note p{
+  margin: 0;
+}
+
+/* --------------------------
+   Banner CTA
+--------------------------- */
+.banner{
   margin-top: 22px;
   border-radius: var(--radius2);
-  border: 1px solid rgba(74,163,255,.26);
+  border: 1px solid rgba(74,163,255,.30);
   background:
-    radial-gradient(900px 260px at 18% 0%, rgba(74,163,255,.14), transparent 55%),
+    radial-gradient(900px 260px at 18% 0%, rgba(74,163,255,.16), transparent 60%),
     linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
   box-shadow: var(--shadow);
   padding: 16px;
@@ -231,36 +437,62 @@
   align-items: center;
 }
 
-.services-page .banner .h3{
+.banner .h3{
   margin: 0 0 6px;
 }
 
-.services-page .banner-actions{
+.banner-actions{
   display: flex;
   justify-content: flex-end;
   gap: 10px;
   flex-wrap: wrap;
 }
 
-.services-page .mt-24{
-  margin-top: 24px;
+/* Local spacing utility */
+.mt-24{ margin-top: 24px; }
+
+/* --------------------------
+   Responsive
+--------------------------- */
+@media (max-width: 920px){
+  .hero-slab{
+    grid-template-columns: 1fr;
+  }
+
+  .hero-side{
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid rgba(255,255,255,.10);
+    padding-top: 16px;
+    margin-top: 6px;
+  }
 }
 
 @media (max-width: 900px){
-  .services-page .banner{
+  .banner{
     grid-template-columns: 1fr;
   }
-  .services-page .banner-actions{
+  .banner-actions{
     justify-content: flex-start;
   }
 }
 
-/* Motion safety */
+@media (max-width: 820px){
+  .rate-card{
+    grid-column: span 12;
+  }
+}
+
+@media (max-width: 720px){
+  .tile{
+    grid-column: span 12;
+  }
+}
+
+/* --------------------------
+   Motion safety
+--------------------------- */
 @media (prefers-reduced-motion: reduce){
-  .services-page .tile{
-    transition: none;
-  }
-  .services-page .tile:hover{
-    transform: none;
-  }
+  .tile{ transition: none; }
+  .tile:hover{ transform: none; }
 }

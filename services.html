@@ -37,25 +37,55 @@
         <a class="nav-link" href="workflow.html">Workflow</a>
         <a class="nav-link" href="schedule.html">Schedule (iLab)</a>
         <a class="nav-link" href="resources.html">Resources</a>
+        <a class="nav-link" href="publications.html">Publications</a>
         <a class="nav-link" href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
   <main id="main" class="page services-page">
-    <section class="section">
+    <section class="page-hero">
       <div class="container">
-
-        <!-- HERO BELONGS HERE (NOT IN HEADER) -->
-        <div class="services-hero">
-          <div class="services-hero-copy">
+        <div class="hero-slab">
+          <div class="hero-main">
             <h1>Services</h1>
             <p class="lead">
-              The core operates as full-service by default. Limited self-service access may be available for trained UNC investigators
+              Full-service by default. Limited self-service access may be available for trained UNC investigators
               under defined conditions and staff oversight.
             </p>
+
+            <div class="cta-row">
+              <a class="btn" href="schedule.html">Schedule in iLab</a>
+              <a class="btn" href="contact.html">Contact</a>
+            </div>
+
+            <div class="note">
+              Best practice: request a consult first. Domain selection, cohort constraints, handling details, and environment all change outcomes.
+            </div>
+          </div>
+
+          <div class="hero-side">
+            <div class="h3">Operating posture</div>
+            <ul class="clean-list">
+              <li>Staff-run execution + QC</li>
+              <li>Standard outputs and run notes</li>
+              <li>Defined exclusion criteria</li>
+              <li>Self-service only when risk and complexity allow</li>
+            </ul>
+
+            <div class="mini-actions">
+              <span class="pill">Staff-run by default</span>
+              <span class="pill pill-primary">Consult-first</span>
+              <span class="pill">Standard outputs</span>
+              <span class="pill">QC required</span>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
 
         <div class="grid-2">
           <div class="card">
@@ -83,59 +113,144 @@
         </div>
 
         <div class="services-domains">
-          <h2>Domains currently supported</h2>
+          <h2>Domains currently supported (skeleton)</h2>
           <p class="muted">
-            Assay-specific pages will be added over time. For now, use iLab to request a consult and specify your domain(s).
+            Assay-specific pages will be added over time. For now, request a consult in iLab and specify your domain(s).
           </p>
 
           <div class="tiles">
             <article class="tile">
+              <div class="tile-media">
+                <img
+                  src="assets/img/water-maze.jpg"
+                  alt="Mouse performing Morris water maze task"
+                  loading="lazy"
+                />
+              </div>
               <h3>Water maze</h3>
               <p>Spatial learning and memory paradigms. Sensitive to strain, vision, and stress handling.</p>
               <div class="tile-meta">Typical outputs: latency, path length, probe metrics (placeholder)</div>
             </article>
 
             <article class="tile">
+              <div class="tile-media tile-media--motor" role="img" aria-label="Placeholder image for Motor assay">
+                <div class="tile-media-label">Motor</div>
+              </div>
               <h3>Motor</h3>
               <p>Locomotion, coordination, balance, and motor learning readouts.</p>
               <div class="tile-meta">Typical outputs: distance, speed, falls, performance curves (placeholder)</div>
             </article>
 
             <article class="tile">
+              <div class="tile-media tile-media--anxiety" role="img" aria-label="Placeholder image for Anxiety / Affect assay">
+                <div class="tile-media-label">Anxiety / Affect</div>
+              </div>
               <h3>Anxiety / Affect</h3>
               <p>Approach–avoidance and exploration-based measures. Strongly environment-dependent.</p>
               <div class="tile-meta">Typical outputs: time-in-zone, entries, ethological metrics (placeholder)</div>
             </article>
 
             <article class="tile">
+              <div class="tile-media tile-media--memory" role="img" aria-label="Placeholder image for Learning / Memory assay">
+                <div class="tile-media-label">Learning / Memory</div>
+              </div>
               <h3>Learning / Memory</h3>
               <p>Task-dependent learning curves and retention metrics.</p>
               <div class="tile-meta">Typical outputs: trials-to-criterion, error rates (placeholder)</div>
             </article>
 
             <article class="tile">
+              <div class="tile-media tile-media--social" role="img" aria-label="Placeholder image for Social assay">
+                <div class="tile-media-label">Social</div>
+              </div>
               <h3>Social</h3>
               <p>Social preference, novelty, interaction time, and exploration patterns.</p>
               <div class="tile-meta">Typical outputs: interaction durations, preference indices (placeholder)</div>
             </article>
 
             <article class="tile">
+              <div class="tile-media tile-media--sensory" role="img" aria-label="Placeholder image for Sensory assay">
+                <div class="tile-media-label">Sensory</div>
+              </div>
               <h3>Sensory</h3>
               <p>Basic sensory processing and gating tasks (capability-dependent).</p>
               <div class="tile-meta">Typical outputs: response amplitudes, detection metrics (placeholder)</div>
             </article>
 
             <article class="tile">
+              <div class="tile-media tile-media--circadian" role="img" aria-label="Placeholder image for Circadian assay">
+                <div class="tile-media-label">Circadian</div>
+              </div>
               <h3>Circadian</h3>
               <p>Activity rhythms and light-cycle sensitive paradigms.</p>
               <div class="tile-meta">Typical outputs: actograms, period, phase metrics (placeholder)</div>
             </article>
 
             <article class="tile">
+              <div class="tile-media tile-media--sleep" role="img" aria-label="Placeholder image for Sleep assay">
+                <div class="tile-media-label">Sleep</div>
+              </div>
               <h3>Sleep</h3>
               <p>Sleep-related metrics are instrumentation-dependent. Confirm capability during consult.</p>
               <div class="tile-meta">Typical outputs: bout structure, staging (placeholder)</div>
             </article>
+          </div>
+        </div>
+
+        <div class="rates mt-24" id="rates">
+          <h2>Rates</h2>
+          <p class="muted">
+            Placeholder rate structure. Replace dollar values once your iLab catalog is finalized. Rates may vary by assay complexity,
+            staffing level, analysis deliverables, and pilot work.
+          </p>
+
+          <div class="rate-grid">
+            <article class="rate-card">
+              <div class="rate-top">
+                <div class="h3">UNC internal</div>
+                <div class="rate-price">$___ / hour</div>
+              </div>
+              <ul class="clean-list">
+                <li>Staff-run execution + basic QC</li>
+                <li>Standard outputs</li>
+                <li>Scheduling via iLab</li>
+              </ul>
+              <div class="rate-foot muted">Use this for most UNC labs.</div>
+            </article>
+
+            <article class="rate-card">
+              <div class="rate-top">
+                <div class="h3">External academic</div>
+                <div class="rate-price">$___ / hour</div>
+              </div>
+              <ul class="clean-list">
+                <li>Same deliverables as internal</li>
+                <li>May require MTA / agreements</li>
+                <li>Lead time depends on capacity</li>
+              </ul>
+              <div class="rate-foot muted">For non-UNC universities and nonprofits.</div>
+            </article>
+
+            <article class="rate-card">
+              <div class="rate-top">
+                <div class="h3">Industry</div>
+                <div class="rate-price">$___ / hour</div>
+              </div>
+              <ul class="clean-list">
+                <li>Statement of work / defined outputs</li>
+                <li>Priority scheduling by agreement</li>
+                <li>Optional expanded reporting</li>
+              </ul>
+              <div class="rate-foot muted">For commercial sponsors and fee-for-service.</div>
+            </article>
+          </div>
+
+          <div class="rate-note">
+            <div class="h3">What changes the cost</div>
+            <p class="muted">
+              Animal numbers, number of sessions, assay setup time, extra handling constraints, video scoring, blinded scoring,
+              custom analysis pipelines, and special scheduling windows.
+            </p>
           </div>
         </div>
 
@@ -158,15 +273,13 @@
     <div class="container footer-inner">
       <div class="footer-left">
         <div class="footer-title">UNC Mouse Behavior Core</div>
-        <div class="footer-line muted">
-          Primary contact: <span class="footer-strong">Krisha</span> (Core Manager)
-        </div>
+        <div class="footer-line muted">Services list is a placeholder skeleton.</div>
       </div>
 
       <div class="footer-right">
         <div class="footer-links">
+          <a href="resources.html">Resources</a>
           <a href="contact.html">Contact</a>
-          <a href="resources.html">Acknowledgement</a>
         </div>
         <div class="footer-credit muted">Site built by Kam</div>
       </div>

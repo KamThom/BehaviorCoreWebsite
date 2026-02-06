@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Resources | UNC Mouse Behavior Core</title>
+  <meta name="description"
+        content="Planning checklist, acknowledgement language, FAQs, and resources for working with the UNC Mouse Behavior Core." />
+
+  <!-- Favicons -->
+  <link rel="icon" href="assets/favicon/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-16.png" sizes="16x16">
+  <link rel="apple-touch-icon" href="assets/favicon/icon-180.png">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/resources.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img class="brand-logo"
+             src="assets/img/BehaviorCoreLogo_Favicon.png"
+             alt="UNC Mouse Behavior Core logo" />
+        <div class="brand-text">
+          <div class="brand-title">Mouse Behavior Core</div>
+          <div class="brand-subtitle">UNC Chapel Hill</div>
+        </div>
+      </div>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        Menu
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="services.html">Services</a>
+        <a class="nav-link" href="workflow.html">Workflow</a>
+        <a class="nav-link" href="schedule.html">Schedule (iLab)</a>
+        <a class="nav-link is-active" href="resources.html">Resources</a>
+        <a class="nav-link" href="publications.html">Publications</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="page resources-page">
+
+    <!-- Hero slab -->
+    <section class="section page-hero">
+      <div class="container">
+        <div class="hero-slab hero-slab--single">
+          <div class="hero-main">
+            <h1>Resources</h1>
+            <p class="lead">
+              Documents and conventions that reduce variance, prevent scheduling mistakes,
+              and make deliverables predictable.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resource tiles -->
+    <section class="section">
+      <div class="container">
+
+        <div class="grid-2" id="planning">
+          <article class="card resource-card">
+            <h2 class="h3">Study planning checklist</h2>
+            <p class="muted">
+              Define endpoints, cohorts, exclusions, handling constraints,
+              and timeline assumptions.
+            </p>
+
+            <div class="resource-meta">
+              <span class="tag">PDF</span>
+              <span class="tag">Pre-scheduling</span>
+            </div>
+
+            <a class="btn" href="#" aria-disabled="true">Coming soon</a>
+          </article>
+
+          <article class="card resource-card">
+            <h2 class="h3">Training + self-service policy</h2>
+            <p class="muted">
+              Requirements, assay eligibility, and what “trained” actually means.
+            </p>
+
+            <div class="resource-meta">
+              <span class="tag">Policy</span>
+              <span class="tag">UNC only</span>
+            </div>
+
+            <a class="btn" href="#" aria-disabled="true">Coming soon</a>
+          </article>
+        </div>
+
+        <div class="grid-2 mt-24" id="deliverables">
+          <article class="card resource-card">
+            <h2 class="h3">Deliverables overview</h2>
+            <p class="muted">
+              Run summary, raw exports (system-dependent),
+              processed metrics (CSV), basic plots.
+            </p>
+            <a class="btn" href="services.html">See services context</a>
+          </article>
+
+          <article class="card resource-card">
+            <h2 class="h3">Data dictionary</h2>
+            <p class="muted">
+              File formats, column meanings, QC flags, naming conventions.
+            </p>
+
+            <div class="resource-meta">
+              <span class="tag">CSV</span>
+              <span class="tag">QC</span>
+            </div>
+
+            <a class="btn" href="#" aria-disabled="true">Coming soon</a>
+          </article>
+        </div>
+
+        <!-- Acknowledgement -->
+        <section class="card mt-24" id="ack">
+          <h2 class="h3">Acknowledgement language</h2>
+          <p class="muted">
+            Use this text in publications. Add grant numbers where applicable.
+          </p>
+
+          <div class="code-like" id="ack-text">
+            Please acknowledge the UNC Mouse Behavior Core for behavioral testing support.
+            Include relevant grant numbers when applicable.
+          </div>
+
+          <div class="copy-row">
+            <button class="btn copy-btn" type="button">Copy text</button>
+            <span class="muted tiny" id="copy-status" aria-live="polite"></span>
+          </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="card mt-24" id="faq">
+          <h2 class="h3">FAQ</h2>
+
+          <details class="faq-item">
+            <summary>Do you accept external users?</summary>
+            <div class="faq-body">
+              Define explicitly whether external users are supported and under what constraints.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Can my lab run assays directly?</summary>
+            <div class="faq-body">
+              Limited self-service may be available for trained investigators.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Do you provide statistics?</summary>
+            <div class="faq-body">
+              Processed metrics and basic plots are standard. Statistical consulting is separate.
+            </div>
+          </details>
+        </section>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <div class="footer-title">UNC Mouse Behavior Core</div>
+        <div class="footer-line muted">
+          Primary contact: <span class="footer-strong">Krisha</span> (Core Manager)
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-links">
+          <a href="contact.html">Contact</a>
+          <a href="resources.html">Acknowledgement</a>
+        </div>
+        <div class="footer-credit muted">Site built by Kam</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+
+  <!-- Copy script -->
+  <script>
+    (function () {
+      const btn = document.querySelector(".copy-btn");
+      const text = document.getElementById("ack-text");
+      const status = document.getElementById("copy-status");
+      if (!btn || !text) return;
+
+      btn.addEventListener("click", async () => {
+        try {
+          await navigator.clipboard.writeText(text.textContent.trim());
+          status.textContent = "Copied.";
+          setTimeout(() => status.textContent = "", 1200);
+        } catch {
+          status.textContent = "Copy failed.";
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

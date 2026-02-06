@@ -3,55 +3,87 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+
   <link rel="icon" href="assets/favicon/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" href="assets/favicon/favicon-32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="assets/favicon/favicon-16.png" sizes="16x16">
   <link rel="apple-touch-icon" href="assets/favicon/icon-180.png">
+
   <title>Workflow | UNC Mouse Behavior Core</title>
-  <meta name="description" content="How to work with the UNC Mouse Behavior Core: consult, plan, schedule in iLab, run and deliver." />
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <meta name="description" content="How to work with the UNC Mouse Behavior Core: consult, align design, schedule in iLab, run with QC, and receive standardized outputs." />
+
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/workflow.css">
 </head>
+
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
-        <img class="brand-logo" src="assets/img/behaviorcorelogo.png" alt="UNC Mouse Behavior Core logo" />
+        <img class="brand-logo" src="assets/img/BehaviorCoreLogo_Favicon.png" alt="UNC Mouse Behavior Core logo" />
         <div class="brand-text">
           <div class="brand-title">Mouse Behavior Core</div>
           <div class="brand-subtitle">UNC Chapel Hill</div>
         </div>
       </div>
+
       <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+
       <nav id="site-nav" class="site-nav" aria-label="Primary">
         <a class="nav-link" href="index.html">Home</a>
         <a class="nav-link" href="services.html">Services</a>
         <a class="nav-link is-active" href="workflow.html">Workflow</a>
         <a class="nav-link" href="schedule.html">Schedule (iLab)</a>
         <a class="nav-link" href="resources.html">Resources</a>
+        <a class="nav-link" href="publications.html">Publications</a>
         <a class="nav-link" href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main id="main" class="page">
+  <main id="main" class="page workflow-page">
     <section class="section">
       <div class="container">
-        <h1>Workflow</h1>
-        <p class="lead">
-          This page is written to prevent “surprise exclusions” and “we booked the wrong thing” problems.
-          If you skip the consult, you’ll usually pay in delay.
-        </p>
 
-        <div class="steps">
+        <!-- HERO -->
+        <div class="workflow-hero">
+          <div class="workflow-hero-copy">
+            <h1>Workflow</h1>
+            <p class="lead">
+              This page exists to prevent “surprise exclusions” and “we booked the wrong thing” outcomes.
+            </p>
+
+            <div class="cta-row">
+              <a class="btn" href="schedule.html">Schedule in iLab</a>
+              <a class="btn" href="contact.html">Request a consult</a>
+              <a class="btn" href="services.html">Browse services</a>
+            </div>
+          </div>
+
+          <aside class="workflow-hero-aside" aria-label="Quick guide">
+            <div class="workflow-hero-kicker muted">What success looks like</div>
+            <ul class="clean-list">
+              <li>Endpoints locked before scheduling</li>
+              <li>Cohorts matched to assay constraints</li>
+              <li>Documented run notes and QC exclusions</li>
+              <li>Standardized outputs you can analyze immediately</li>
+            </ul>
+          </aside>
+        </div>
+
+        <!-- STEPS -->
+        <h2 class="workflow-section-title">How projects move through the core</h2>
+        <div class="steps workflow-steps">
           <div class="step">
             <div class="step-num">1</div>
             <div class="step-body">
               <div class="step-title">Consult</div>
-              <p>Align scientific question, primary endpoint, constraints, and feasible paradigms.</p>
+              <p>Align the scientific question, primary endpoint, constraints, and feasible paradigms.</p>
             </div>
           </div>
+
           <div class="step">
             <div class="step-num">2</div>
             <div class="step-body">
@@ -59,13 +91,15 @@
               <p>Confirm cohorts, run order, habituation needs, exclusions, and expected data outputs.</p>
             </div>
           </div>
+
           <div class="step">
             <div class="step-num">3</div>
             <div class="step-body">
               <div class="step-title">Schedule via iLab</div>
-              <p>Requests and approvals occur in iLab. Staff will confirm scope and logistics.</p>
+              <p>Requests and approvals occur in iLab. Staff confirms scope, logistics, and readiness.</p>
             </div>
           </div>
+
           <div class="step">
             <div class="step-num">4</div>
             <div class="step-body">
@@ -75,14 +109,27 @@
           </div>
         </div>
 
-        <div class="grid-2">
+        <!-- NON-NEGOTIABLES -->
+        <div class="card workflow-nonneg mt-24" aria-label="Non-negotiables">
+          <h2 class="h3">Non-negotiables</h2>
+          <ul class="clean-list">
+            <li><strong>Endpoints are locked</strong> before booking. If they change mid-run, your study becomes exploratory.</li>
+            <li><strong>Consult required</strong> for new assays, new labs, or non-standard constraints.</li>
+            <li><strong>Light-cycle compliance</strong> is mandatory for circadian-sensitive work (and “we forgot” doesn’t count).</li>
+            <li><strong>QC exclusions are final</strong> and will be documented with reasons.</li>
+            <li><strong>Staff authority during runs</strong> applies in full-service and supervised self-service.</li>
+          </ul>
+        </div>
+
+        <!-- CHECKLIST + FAILURE MODES -->
+        <div class="grid-2 mt-24">
           <div class="card">
             <h2 class="h3">Intake checklist (bring this)</h2>
             <ul class="clean-list">
               <li>Hypothesis and primary behavioral endpoint</li>
               <li>Genotype/strain, age, sex, N per group (target)</li>
               <li>Handling history and housing conditions</li>
-              <li>Any interventions (drug, surgery, viral, diet) with timing</li>
+              <li>Interventions (drug, surgery, viral, diet) with timing</li>
               <li>Known constraints: light cycle, transport, phenotype severity</li>
             </ul>
           </div>
@@ -99,10 +146,11 @@
           </div>
         </div>
 
-        <div class="card mt-24">
-          <h2 class="h3">Timeline expectations (placeholder)</h2>
+        <!-- TIMELINE -->
+        <div class="card workflow-timeline mt-24">
+          <h2 class="h3">Timeline expectations</h2>
           <p class="muted">
-            Replace with real numbers once you know throughput, staffing, and room capacity.
+            This is some palcehiolder text to be replaced with info
           </p>
           <ul class="clean-list">
             <li>Consult scheduling: 3–10 business days (placeholder)</li>
@@ -117,13 +165,19 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div>
+      <div class="footer-left">
         <div class="footer-title">UNC Mouse Behavior Core</div>
-        <div class="muted">Workflow language is intentionally strict to reduce downstream chaos.</div>
+        <div class="footer-line muted">
+          Primary contact: <span class="footer-strong">Krisha</span> (Core Manager)
+        </div>
       </div>
-      <div class="footer-links">
-        <a href="schedule.html">Schedule</a>
-        <a href="contact.html">Contact</a>
+
+      <div class="footer-right">
+        <div class="footer-links">
+          <a href="contact.html">Contact</a>
+          <a href="resources.html">Acknowledgement</a>
+        </div>
+        <div class="footer-credit muted">Site built by Kam</div>
       </div>
     </div>
   </footer>

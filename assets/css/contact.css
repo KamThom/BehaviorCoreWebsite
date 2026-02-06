@@ -1,0 +1,287 @@
+/* ==========================================
+   Contact page (contact.html)
+   Depends on base.css
+========================================== */
+
+/* --------------------------
+   Page layout
+--------------------------- */
+.page{
+  padding: 24px 0 6px;
+}
+
+.section{
+  padding: 18px 0;
+}
+
+.page-hero{
+  padding: 34px 0 0;
+}
+
+/* Single-column wrapper for this page */
+.grid-1{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+/* local spacing utility (avoid depending on base spacing tokens) */
+.mt-18{ margin-top: 18px; }
+
+
+/* --------------------------
+   Hero slab (match resources)
+--------------------------- */
+.hero-slab{
+  padding: 22px;
+  border-radius: var(--radius2);
+  border: 1px solid rgba(255,255,255,.12);
+  background:
+    radial-gradient(900px 260px at 12% 18%, rgba(74,163,255,.16), transparent 60%),
+    linear-gradient(180deg, rgba(17,24,38,.94), rgba(15,22,34,.94));
+  box-shadow: var(--shadow);
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.hero-main h1{
+  margin: 0 0 10px;
+  font-size: clamp(26px, 3vw, 40px);
+  line-height: 1.12;
+}
+
+.hero-main .lead{
+  margin: 0;
+  max-width: 70ch;
+}
+
+
+/* --------------------------
+   Core email block
+--------------------------- */
+.code-like{
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(0,0,0,.18);
+  color: var(--text);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 13px;
+  line-height: 1.45;
+  white-space: pre-wrap;
+}
+
+.contact-page .cta-row{
+  margin-top: 12px;
+}
+
+/* Title row + small copy button */
+.card-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 12px;
+}
+
+.icon-btn{
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.05);
+  color: var(--text);
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-weight: 800;
+  cursor: pointer;
+}
+.icon-btn:hover{
+  background: rgba(255,255,255,.08);
+}
+
+
+/* --------------------------
+   Staff routing hint
+--------------------------- */
+.staff-hint{
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.03);
+  display: grid;
+  gap: 8px;
+}
+
+.hint-row{
+  display:flex;
+  align-items:center;
+  gap: 10px;
+}
+
+.pill{
+  display:inline-flex;
+  align-items:center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(0,0,0,.12);
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.pill-primary{
+  border-color: rgba(74,163,255,.45);
+  background: rgba(74,163,255,.10);
+}
+
+
+/* --------------------------
+   Staff list + cards
+--------------------------- */
+.staff-list{
+  margin-top: 12px;
+  display: grid;
+  gap: 12px;
+}
+
+.staff{
+  padding: 14px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.03);
+}
+
+.staff-featured{
+  border-color: rgba(74,163,255,.35);
+  background:
+    radial-gradient(700px 220px at 10% 0%, rgba(74,163,255,.12), transparent 60%),
+    rgba(255,255,255,.03);
+}
+
+.staff-top{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap: 10px;
+}
+
+.staff-name{
+  font-weight: 900;
+  margin: 0;
+}
+
+.staff-role{
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+
+/* --------------------------
+   Badges + metadata links
+--------------------------- */
+.badge{
+  display:inline-flex;
+  align-items:center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 900;
+  border: 1px solid rgba(74,163,255,.45);
+  background: rgba(74,163,255,.10);
+  color: var(--text);
+}
+
+/* Neutral badge (used for Primary contact now) */
+.badge-ghost{
+  border-color: rgba(255,255,255,.14);
+  background: rgba(0,0,0,.10);
+}
+
+.staff-meta{
+  margin-top: 10px;
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap: 8px;
+}
+
+.meta-link{
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,.18);
+}
+.meta-link:hover{
+  border-bottom-color: rgba(74,163,255,.55);
+}
+
+.meta-sep{
+  color: rgba(255,255,255,.25);
+}
+
+
+/* --------------------------
+   Staff action buttons
+--------------------------- */
+.staff-actions{
+  margin-top: 12px;
+  display:flex;
+  gap: 10px;
+  flex-wrap:wrap;
+}
+
+.mini-btn{
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.05);
+  color: var(--text);
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-weight: 800;
+  cursor: pointer;
+  text-decoration:none;
+}
+.mini-btn:hover{
+  background: rgba(255,255,255,.08);
+}
+
+.mini-btn-ghost{
+  background: transparent;
+}
+
+
+/* --------------------------
+   Toast (copy feedback)
+--------------------------- */
+.toast{
+  position: fixed;
+  left: 50%;
+  bottom: 18px;
+  transform: translateX(-50%);
+  padding: 10px 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.16);
+  background: rgba(15,22,34,.92);
+  color: var(--text);
+  font-weight: 900;
+  opacity: 0;
+  pointer-events:none;
+  transition: opacity .18s ease, transform .18s ease;
+}
+
+.toast.show{
+  opacity: 1;
+  transform: translateX(-50%) translateY(-4px);
+}
+
+
+/* --------------------------
+   Responsive tweaks
+--------------------------- */
+@media (max-width: 920px){
+  .hero-main .lead{
+    max-width: 60ch;
+  }
+}

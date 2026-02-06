@@ -1,0 +1,408 @@
+<!-- publications.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Publications | UNC Mouse Behavior Core</title>
+  <meta name="description" content="Publications and core-authored work from the UNC Mouse Behavior Core." />
+
+  <!-- Favicons -->
+  <link rel="icon" href="assets/favicon/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-16.png" sizes="16x16">
+  <link rel="apple-touch-icon" href="assets/favicon/icon-180.png">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/publications.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img class="brand-logo"
+             src="assets/img/BehaviorCoreLogo_Favicon.png"
+             alt="UNC Mouse Behavior Core logo" />
+        <div class="brand-text">
+          <div class="brand-title">Mouse Behavior Core</div>
+          <div class="brand-subtitle">UNC Chapel Hill</div>
+        </div>
+      </div>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        Menu
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="services.html">Services</a>
+        <a class="nav-link" href="workflow.html">Workflow</a>
+        <a class="nav-link" href="schedule.html">Schedule (iLab)</a>
+        <a class="nav-link" href="resources.html">Resources</a>
+        <a class="nav-link is-active" href="publications.html">Publications</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="page publications-page">
+
+    <!-- Hero -->
+    <section class="section page-hero">
+      <div class="container">
+        <div class="hero-slab pubs-hero">
+          <div class="hero-main">
+            <h1>Publications</h1>
+            <p class="lead">
+              Core-authored work, methods papers, and representative publications using the Mouse Behavior Core.
+            </p>
+
+            <div class="pubs-controls" role="search" aria-label="Publication search and filters">
+              <label class="sr-only" for="pubSearch">Search publications</label>
+              <input id="pubSearch" class="pub-search" type="search" placeholder="Search title, author, year, keyword…" autocomplete="off" />
+
+              <div class="tag-row" aria-label="Tag filters">
+                <button class="tag is-active" type="button" data-filter="all">All</button>
+                <button class="tag" type="button" data-filter="methods">Methods</button>
+                <button class="tag" type="button" data-filter="watermaze">Water maze</button>
+                <button class="tag" type="button" data-filter="sleep">Sleep</button>
+                <button class="tag" type="button" data-filter="anxiety">Anxiety/Affect</button>
+                <button class="tag" type="button" data-filter="motor">Motor</button>
+                <button class="tag" type="button" data-filter="circadian">Circadian</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick stats (computed client-side from the list) -->
+          <aside class="hero-side" aria-label="Publication stats">
+            <div class="stat-grid">
+              <div class="stat">
+                <div class="stat-num" id="statTotal">—</div>
+                <div class="stat-label">Total</div>
+              </div>
+              <div class="stat">
+                <div class="stat-num" id="statYears">—</div>
+                <div class="stat-label">Year span</div>
+              </div>
+              <div class="stat">
+                <div class="stat-num" id="statTags">—</div>
+                <div class="stat-label">Tags</div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured -->
+    <section class="section">
+      <div class="container">
+        <div class="card featured">
+          <div class="featured-left">
+            <div class="badge badge-ghost">Featured</div>
+            <h2 class="h3">A representative methods / pipeline paper</h2>
+            <p class="muted">
+              Put one “anchor” publication here. It makes the page feel intentional instead of a dumping ground.
+            </p>
+
+            <div class="cta-row">
+              <a class="btn" href="#" target="_blank" rel="noopener">View PDF</a>
+              <a class="btn btn-ghost" href="#" target="_blank" rel="noopener">DOI</a>
+              <button class="btn btn-ghost" type="button"
+                      data-copy-text="Core Author, et al. (2025). Title of Featured Paper. Journal. DOI">
+                Copy citation
+              </button>
+            </div>
+
+            <details class="abstract">
+              <summary>Abstract</summary>
+              <p class="muted">
+                Replace with the real abstract. Keep it one short paragraph. Nobody reads walls of text.
+              </p>
+            </details>
+          </div>
+
+          <a class="featured-thumb" href="#" target="_blank" rel="noopener" aria-label="Open featured PDF">
+            <img src="assets/pubs/paper_2024_example_firstpage.png" alt="First page preview of featured publication">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- List -->
+    <section class="section">
+      <div class="container">
+        <div class="pubs-head">
+          <h2 class="h3">All publications</h2>
+          <div class="muted tiny" id="resultCount">—</div>
+        </div>
+
+        <div class="pubs-list" id="pubList">
+
+          <!-- Publication card template: copy/paste per paper -->
+          <article class="pub" data-year="2025" data-tags="methods,watermaze" data-keywords="pipeline qc water maze behavior">
+            <a class="pub-thumb" href="assets/pubs/paper_2025_example.pdf" target="_blank" rel="noopener" aria-label="Open PDF">
+              <img src="assets/pubs/paper_2024_example_firstpage.png" alt="First page preview of 2025 example publication">
+            </a>
+
+            <div class="pub-body">
+              <div class="pub-top">
+                <h3 class="pub-title">
+                  <a href="assets/pubs/paper_2025_example.pdf" target="_blank" rel="noopener">
+                    Example Paper Title: Standardized behavioral pipeline with QC outputs
+                  </a>
+                </h3>
+                <div class="pub-meta">
+                  <span class="pub-year">2025</span>
+                  <span class="meta-sep">•</span>
+                  <span class="pub-journal">Journal Name</span>
+                </div>
+              </div>
+
+              <div class="pub-authors muted">
+                First Author, Second Author, …, Last Author
+              </div>
+
+              <div class="pub-tags" aria-label="Publication tags">
+                <span class="chip">Methods</span>
+                <span class="chip">Water maze</span>
+              </div>
+
+              <details class="abstract">
+                <summary>Abstract</summary>
+                <p class="muted">
+                  Short abstract text. If you don’t want abstracts everywhere, delete the details block.
+                </p>
+              </details>
+
+              <div class="pub-actions">
+                <a class="mini-btn" href="assets/pubs/paper_2025_example.pdf" target="_blank" rel="noopener">PDF</a>
+                <a class="mini-btn mini-btn-ghost" href="#" target="_blank" rel="noopener">DOI</a>
+                <button class="mini-btn mini-btn-ghost" type="button"
+                        data-copy-text="First Author, et al. (2025). Example Paper Title. Journal Name. DOI">
+                  Copy citation
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="pub" data-year="2024" data-tags="sleep,circadian" data-keywords="sleep circadian rhythm scoring telemetry">
+            <a class="pub-thumb" href="assets/pubs/paper_2024_example.pdf" target="_blank" rel="noopener" aria-label="Open PDF">
+              <img src="assets/pubs/paper_2024_example_firstpage.png" alt="First page preview of 2024 example publication">
+            </a>
+
+            <div class="pub-body">
+              <div class="pub-top">
+                <h3 class="pub-title">
+                  <a href="assets/pubs/paper_2024_example.pdf" target="_blank" rel="noopener">
+                    Example Paper Title: Sleep and circadian endpoints in mouse models
+                  </a>
+                </h3>
+                <div class="pub-meta">
+                  <span class="pub-year">2024</span>
+                  <span class="meta-sep">•</span>
+                  <span class="pub-journal">Journal Name</span>
+                </div>
+              </div>
+
+              <div class="pub-authors muted">
+                First Author, Second Author, …, Last Author
+              </div>
+
+              <div class="pub-tags" aria-label="Publication tags">
+                <span class="chip">Sleep</span>
+                <span class="chip">Circadian</span>
+              </div>
+
+              <details class="abstract">
+                <summary>Abstract</summary>
+                <p class="muted">
+                  Short abstract text. If you don’t want abstracts everywhere, delete the details block.
+                </p>
+              </details>
+
+              <div class="pub-actions">
+                <a class="mini-btn" href="assets/pubs/paper_2024_example.pdf" target="_blank" rel="noopener">PDF</a>
+                <a class="mini-btn mini-btn-ghost" href="#" target="_blank" rel="noopener">DOI</a>
+                <button class="mini-btn mini-btn-ghost" type="button"
+                        data-copy-text="First Author, et al. (2024). Example Paper Title. Journal Name. DOI">
+                  Copy citation
+                </button>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- Keep adding more <article class="pub">… -->
+
+        </div>
+
+        <div class="card mt-24 pubs-footnote">
+          <h2 class="h3">Want your paper listed?</h2>
+          <p class="muted">
+            Email the citation + DOI + PDF (or link), and we’ll add it. If it used core services, include which domains/paradigms.
+          </p>
+          <div class="cta-row">
+            <a class="btn" href="contact.html">Contact</a>
+            <a class="btn btn-ghost" href="resources.html">Acknowledgement</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <div class="footer-title">UNC Mouse Behavior Core</div>
+        <div class="footer-line muted">
+          Primary contact: <span class="footer-strong">Krisha</span> (Core Manager)
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-links">
+          <a href="contact.html">Contact</a>
+          <a href="resources.html">Acknowledgement</a>
+        </div>
+        <div class="footer-credit muted">Site built by Kam</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+
+  <!-- Filtering + copy-to-clipboard + stats -->
+  <script>
+    (function () {
+      const list = document.getElementById('pubList');
+      const pubs = Array.from(list.querySelectorAll('.pub'));
+      const search = document.getElementById('pubSearch');
+      const tags = Array.from(document.querySelectorAll('.tag-row .tag'));
+      const resultCount = document.getElementById('resultCount');
+
+      const statTotal = document.getElementById('statTotal');
+      const statYears = document.getElementById('statYears');
+      const statTags = document.getElementById('statTags');
+
+      let activeFilter = 'all';
+
+      function norm(s) { return (s || '').toLowerCase().trim(); }
+
+      function getText(pub) {
+        const title = pub.querySelector('.pub-title')?.textContent || '';
+        const authors = pub.querySelector('.pub-authors')?.textContent || '';
+        const journal = pub.querySelector('.pub-journal')?.textContent || '';
+        const year = pub.getAttribute('data-year') || '';
+        const keywords = pub.getAttribute('data-keywords') || '';
+        return norm([title, authors, journal, year, keywords].join(' '));
+      }
+
+      function matches(pub) {
+        const q = norm(search.value);
+        const textOk = !q || getText(pub).includes(q);
+
+        const tagsStr = norm(pub.getAttribute('data-tags') || '');
+        const tagOk = (activeFilter === 'all') || tagsStr.split(',').map(norm).includes(activeFilter);
+
+        return textOk && tagOk;
+      }
+
+      function render() {
+        let shown = 0;
+        pubs.forEach(pub => {
+          const ok = matches(pub);
+          pub.style.display = ok ? '' : 'none';
+          if (ok) shown++;
+        });
+        resultCount.textContent = shown + ' shown';
+      }
+
+      function computeStats() {
+        statTotal.textContent = String(pubs.length);
+
+        const years = pubs.map(p => parseInt(p.getAttribute('data-year') || '0', 10)).filter(Boolean);
+        if (years.length) {
+          const minY = Math.min.apply(null, years);
+          const maxY = Math.max.apply(null, years);
+          statYears.textContent = (minY === maxY) ? String(minY) : (minY + '–' + maxY);
+        } else {
+          statYears.textContent = '—';
+        }
+
+        const tagSet = new Set();
+        pubs.forEach(p => {
+          (p.getAttribute('data-tags') || '').split(',').map(norm).filter(Boolean).forEach(t => tagSet.add(t));
+        });
+        statTags.textContent = String(tagSet.size);
+
+        resultCount.textContent = pubs.length + ' shown';
+      }
+
+      function setFilter(next) {
+        activeFilter = next;
+        tags.forEach(b => b.classList.toggle('is-active', b.getAttribute('data-filter') === next));
+        render();
+      }
+
+      // Search
+      search.addEventListener('input', render);
+
+      // Tag filter buttons
+      tags.forEach(btn => {
+        btn.addEventListener('click', () => setFilter(btn.getAttribute('data-filter')));
+      });
+
+      // Copy buttons
+      function toast(msg) {
+        let t = document.querySelector('.toast');
+        if (!t) {
+          t = document.createElement('div');
+          t.className = 'toast';
+          document.body.appendChild(t);
+        }
+        t.textContent = msg;
+        t.classList.add('show');
+        clearTimeout(window.__toastTimer);
+        window.__toastTimer = setTimeout(() => t.classList.remove('show'), 1400);
+      }
+
+      async function copyText(text) {
+        try {
+          await navigator.clipboard.writeText(text);
+          toast('Copied');
+        } catch (e) {
+          const ta = document.createElement('textarea');
+          ta.value = text;
+          ta.style.position = 'fixed';
+          ta.style.left = '-9999px';
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand('copy');
+          document.body.removeChild(ta);
+          toast('Copied');
+        }
+      }
+
+      document.addEventListener('click', (ev) => {
+        const btn = ev.target.closest('[data-copy-text]');
+        if (!btn) return;
+        const text = (btn.getAttribute('data-copy-text') || '').trim();
+        if (text) copyText(text);
+      });
+
+      // Init
+      computeStats();
+      render();
+    })();
+  </script>
+</body>
+</html>
