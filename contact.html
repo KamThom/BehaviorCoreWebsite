@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
   <title>Contact | UNC Mouse Behavior Core</title>
-  <meta name="description" content="Contact and staff information for the UNC Mouse Behavior Core." />
+  <meta name="description" content="Location and staff contact information for the UNC Mouse Behavior Core." />
 
   <!-- Favicons -->
   <link rel="icon" href="assets/favicon/favicon.ico" sizes="any">
@@ -52,13 +52,14 @@
 
   <main id="main" class="page contact-page">
 
+    <!-- Hero -->
     <section class="section page-hero">
       <div class="container">
         <div class="hero-slab">
           <div class="hero-main">
             <h1>Contact</h1>
             <p class="lead">
-              Use iLab for requests and scheduling. Use email for quick questions that don’t require booking.
+              Use iLab for requests and scheduling. Use the staff list below for routing and escalation.
             </p>
           </div>
         </div>
@@ -68,19 +69,81 @@
     <section class="section">
       <div class="container">
 
-        <!-- Row 1: Core email (single column) -->
+        <!-- Row 1: Location -->
         <div class="grid-1">
           <div class="card">
-            <div class="card-head">
-              <h2 class="h3">Core email</h2>
-            </div>
+            <h2 class="h3">Location</h2>
 
-            <div id="coreEmail" class="code-like" data-copy-text="behaviorcore@unc.edu">randomemail@email.random.filler</div>
-            <p class="muted">Use this for general questions and routing. Scheduling still happens in iLab.</p>
+            <div class="loc-grid">
+              <div class="loc-main">
+                <div id="coreAddress"
+                     class="code-like"
+                     data-copy-text="Medical Biomolecular Research Building (MBRB)
+111 Mason Farm Rd, Chapel Hill, NC 27514">
+Medical Biomolecular Research Building (MBRB)
+111 Mason Farm Rd, Chapel Hill, NC 27514
+                </div>
 
-            <div class="cta-row">
-              <button class="btn" type="button" data-copy="#coreEmail">Copy email</button>
-              <a class="btn btn-ghost" href="mailto:behaviorcore@unc.edu">Email now</a>
+                <div class="cta-row">
+                  <button class="btn" type="button" data-copy="#coreAddress">Copy address</button>
+                  <a class="btn btn-ghost"
+                     href="https://www.google.com/maps?q=Medical%20Biomolecular%20Research%20Building%20(MBRB)%20111%20Mason%20Farm%20Rd%2C%20Chapel%20Hill%2C%20NC%2027514"
+                     target="_blank" rel="noopener">
+                    Open in Maps
+                  </a>
+                </div>
+
+                <div class="loc-notes">
+                  <div class="note">
+                    <div class="note-title">Arriving</div>
+                    <div class="muted">
+                      Some areas require badge access. If you’re visiting for the first time, email ahead so someone can meet you.
+                    </div>
+                  </div>
+
+                  <div class="note">
+                    <div class="note-title">Parking</div>
+                    <div class="muted">
+                      Use visitor parking when available. If you’re hauling equipment or animals, ask for the best route and entry point.
+                    </div>
+                  </div>
+
+                  <div class="note">
+                    <div class="note-title">Shipping</div>
+                    <div class="muted">
+                      Do not ship animals or sensitive materials without coordination. “Surprise delivery” is how samples die in hallways.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <aside class="loc-side">
+                <div class="mini-card">
+                  <div class="mini-title">Hours</div>
+                  <div class="mini-value">By appointment</div>
+                  <div class="muted mini-sub">
+                    Schedule in iLab. Staff availability varies with ongoing studies.
+                  </div>
+                </div>
+
+                <div class="mini-card">
+                  <div class="mini-title">Fast routing</div>
+                  <ul class="mini-list">
+                    <li><span class="k">General questions</span><span class="v">Krisha</span></li>
+                    <li><span class="k">Animal-specific</span><span class="v">Viktoriya</span></li>
+                    <li><span class="k">Escalation</span><span class="v">Jose</span></li>
+                  </ul>
+                </div>
+
+                <div class="mini-card">
+                  <div class="mini-title">What to include</div>
+                  <ul class="mini-bullets">
+                    <li>Assay + primary endpoint</li>
+                    <li>Strain/age/sex + target N</li>
+                    <li>Constraints + ideal dates</li>
+                  </ul>
+                </div>
+              </aside>
             </div>
           </div>
         </div>
@@ -114,7 +177,6 @@
                     <div class="staff-name">Krisha Mehta</div>
                     <div class="staff-role">Core Manager</div>
                   </div>
-                  <!-- neutral, not blue -->
                   <span class="badge badge-ghost">Primary contact</span>
                 </div>
 
@@ -180,13 +242,14 @@
                 </div>
               </article>
 
+              <!-- You -->
               <article class="staff">
                 <div class="staff-top">
                   <div>
                     <div class="staff-name">Kam Thomas</div>
                     <div class="staff-role">Engineer (Web / Systems)</div>
                   </div>
-                  <span class="badge badge-ghost">Engineer</span>
+                  <span class="badge badge-ghost">Site</span>
                 </div>
 
                 <div class="staff-meta">
@@ -195,7 +258,7 @@
                   <a class="meta-link" href="https://www.linkedin.com/in/kamthoma" target="_blank" rel="noopener">LinkedIn</a>
                 </div>
 
-                <div class="staff-meta muted">Phone: (919) 555-0123</div>
+                <div class="staff-meta muted">Phone: available on request</div>
 
                 <div class="staff-actions">
                   <button class="mini-btn" type="button" data-copy-text="kamthoma@email.unc.edu">Copy email</button>
@@ -206,17 +269,6 @@
             </div>
           </div>
         </div>
-
-        <!-- Optional guidance card -->
-        <section class="card mt-24">
-          <h2 class="h3">What to include in an email</h2>
-          <ul class="clean-list">
-            <li>Domain(s) of interest and your primary endpoint</li>
-            <li>Strain/age/sex and target N per group</li>
-            <li>Intervention timeline (if any)</li>
-            <li>Ideal date range and hard constraints</li>
-          </ul>
-        </section>
 
       </div>
     </section>

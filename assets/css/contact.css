@@ -18,19 +18,17 @@
   padding: 34px 0 0;
 }
 
-/* Single-column wrapper for this page */
 .grid-1{
   display: grid;
   grid-template-columns: 1fr;
   gap: 18px;
 }
 
-/* local spacing utility (avoid depending on base spacing tokens) */
 .mt-18{ margin-top: 18px; }
 
 
 /* --------------------------
-   Hero slab (match resources)
+   Hero slab
 --------------------------- */
 .hero-slab{
   padding: 22px;
@@ -59,7 +57,7 @@
 
 
 /* --------------------------
-   Core email block
+   Address block
 --------------------------- */
 .code-like{
   margin-top: 10px;
@@ -78,25 +76,101 @@
   margin-top: 12px;
 }
 
-/* Title row + small copy button */
-.card-head{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap: 12px;
+
+/* --------------------------
+   Location layout
+--------------------------- */
+.loc-grid{
+  margin-top: 8px;
+  display: grid;
+  grid-template-columns: 1.45fr .85fr;
+  gap: 14px;
+  align-items: start;
 }
 
-.icon-btn{
-  border: 1px solid rgba(255,255,255,.14);
-  background: rgba(255,255,255,.05);
-  color: var(--text);
-  border-radius: 12px;
-  padding: 10px 12px;
-  font-weight: 800;
-  cursor: pointer;
+/* RIGHT SIDE: this fixes your “touching” issue */
+.loc-side{
+  display: grid;
+  gap: 14px; /* vertical spacing between mini cards */
+  align-content: start;
 }
-.icon-btn:hover{
-  background: rgba(255,255,255,.08);
+
+.loc-notes{
+  margin-top: 12px;
+  display: grid;
+  gap: 10px;
+}
+
+.note{
+  padding: 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.03);
+}
+
+.note-title{
+  font-weight: 900;
+  margin-bottom: 6px;
+}
+
+.mini-card{
+  padding: 14px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.03);
+}
+
+.mini-title{
+  font-weight: 900;
+  margin-bottom: 6px;
+}
+
+.mini-value{
+  font-weight: 900;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.mini-sub{
+  margin: 0;
+}
+
+.mini-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.mini-list li{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 10px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(0,0,0,.10);
+}
+
+.mini-list .k{
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.mini-list .v{
+  font-weight: 900;
+}
+
+.mini-bullets{
+  margin: 0;
+  padding-left: 18px;
+  color: var(--text);
+}
+
+.mini-bullets li{
+  margin: 6px 0;
+  color: var(--text);
 }
 
 
@@ -181,7 +255,7 @@
 
 
 /* --------------------------
-   Badges + metadata links
+   Badges + metadata
 --------------------------- */
 .badge{
   display:inline-flex;
@@ -195,7 +269,6 @@
   color: var(--text);
 }
 
-/* Neutral badge (used for Primary contact now) */
 .badge-ghost{
   border-color: rgba(255,255,255,.14);
   background: rgba(0,0,0,.10);
@@ -214,6 +287,7 @@
   text-decoration: none;
   border-bottom: 1px solid rgba(255,255,255,.18);
 }
+
 .meta-link:hover{
   border-bottom-color: rgba(74,163,255,.55);
 }
@@ -243,6 +317,7 @@
   cursor: pointer;
   text-decoration:none;
 }
+
 .mini-btn:hover{
   background: rgba(255,255,255,.08);
 }
@@ -283,5 +358,9 @@
 @media (max-width: 920px){
   .hero-main .lead{
     max-width: 60ch;
+  }
+
+  .loc-grid{
+    grid-template-columns: 1fr;
   }
 }
